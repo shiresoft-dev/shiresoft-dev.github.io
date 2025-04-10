@@ -3,10 +3,11 @@ import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, useGLTF, Stage } from "@react-three/drei";
 
-function RoundtableModel() {
-  const modelPath = `${import.meta.env.BASE_URL}models/ShiftyPig.glb`;
-  const { scene } = useGLTF(modelPath);
-  return <primitive object={scene} scale={0.5} />;
+function RoundtableModel(props) {
+  const modelUrl = 'https://raw.githubusercontent.com/shiresoft-dev/shiresoft-dev.github.io/main/models/ShiftyPig.glb';
+  const { scene } = useGLTF(modelUrl);
+
+  return <primitive object={scene} scale={0.5} {...props} />;
 }
 
 export default function ModelViewer() {
