@@ -1,6 +1,6 @@
 import React from "react";
 import { Card, CardContent } from "./components/ui/card";
-import ModelViewer           from './ModelViewer.jsx'
+import ModelViewer           from './ModelViewer'
 
 export default function App() {
   return (
