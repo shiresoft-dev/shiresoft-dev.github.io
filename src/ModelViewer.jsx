@@ -4,7 +4,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, useGLTF, Stage } from "@react-three/drei";
 
 function RoundtableModel(props) {
-  const modelUrl = 'https://github.com/shiresoft-dev/shiresoft-dev.github.io/releases/download/v1.0.0/ShiftyPig.glb';
+  const modelUrl = 'https://shiresoftpages.web.app/models/ShiftyPig.glb';
   const { scene } = useGLTF(modelUrl);
 
   return <primitive object={scene} scale={0.5} {...props} />;
